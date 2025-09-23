@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "Sebastians Codes",
+    "description": "Developer portfolio highlighting creative code, thoughtful UX, and tinkering projects."
+  },
+  "hero": {
+    "greeting": "Hi, I’m",
+    "name": "Sebastian",
+    "title": "Backend Developer",
+    "tagline": "Curiosity is what moves the world.",
+    "actions": [
+      {
+        "label": "View Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Get in touch",
+        "href": "mailto:contact@sebastians.codes",
+        "variant": "ghost"
+      }
+    ]
+  },
+  "about": {
+    "heading": "About",
+    "paragraphs": [
+      "I’m a junior .NET developer currently in a two-year YH programme, with roughly two years of hands-on coding experience spanning school projects, personal builds, and freelancing experiments.",
+      "Even while I focus on .NET, I love venturing into other stacks—Rust APIs, Svelte frontends, Docker pipelines—because integrations and databases are where I learn the most and have the most fun."
+    ]
+  },
+  "skills": {
+    "heading": "Capabilities",
+    "categories": [
+      {
+        "title": "Frontend",
+        "items": [
+          "TypeScript",
+          "Svelte",
+          "React",
+          "React Native",
+          "Tailwind CSS"
+        ]
+      },
+      {
+        "title": "Backend",
+        "items": ["Node.js", "Aspnet", "EF Core", "Rocket", "SQL", "MongoDB"]
+      },
+      {
+        "title": "Strengths",
+        "items": ["Linux", "Vim", "Docker", ""]
+      }
+    ]
+  },
+  "projects": {
+    "heading": "Selected Work",
+    "items": [
+      {
+        "title": "Tasker",
+        "description": "Offline-first task and project manager for the terminal with time tracking and secure accounts.",
+        "tags": [".NET", "ASP.NET Core", "Spectre.Console"],
+        "link": "https://github.com/Sebastians-codes/Tasker",
+        "slug": "tasker",
+        "longDescription": "Tasker is an offline-first terminal UI for managing projects, tasks, and tracked time. It blends a Spectre.Console interface with Hangfire-powered automation, secure user accounts, and sync between SQLite and PostgreSQL so you can work anywhere.",
+        "highlights": [
+          "Spectre.Console dashboards for tasks, projects, filters, and detailed editing workflows",
+          "Built-in time tracking that accrues minutes automatically and preserves state across status changes",
+          "Offline-first persistence with SQLite and optional background sync to PostgreSQL"
+        ],
+        "stack": [".NET", "ASP.NET Core", "Spectre.Console", "Entity Framework", "SQLite", "PostgreSQL"],
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/Tasker"
+          }
+        ]
+      },
+      {
+        "title": "RustLikeReturnValues",
+        "description": "Rust-inspired Option<T> and Result<T, E> types for modern C# focused on ergonomics and performance.",
+        "tags": [".NET", "Option", "Result"],
+        "link": "https://github.com/Sebastians-codes/RustLikeReturnValues",
+        "slug": "rustlike-return-values",
+        "longDescription": "RustLikeReturnValues brings the explicitness of Rust's Option and Result types to C#. It provides expressive APIs, low-allocation implementations, and seamless integration with LINQ, async flows, and JSON serialization.",
+        "highlights": [
+          "Option and Result implementations with fluent Map/AndThen/Match helpers and async variants",
+          "Extension library that adds collection Sequence/FilterMap helpers and a Result.Try wrapper",
+          "System.Text.Json converters so Option/Result types serialize without custom plumbing"
+        ],
+        "stack": ["C#"],
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/RustLikeReturnValues"
+          }
+        ]
+      },
+      {
+        "title": "TodosApi",
+        "description": "JWT-secured task and note backend with WebSocket notifications built on ASP.NET Core minimal APIs.",
+        "tags": ["ASP.NET Core", "JWT", "WebSockets"],
+        "link": "https://github.com/Sebastians-codes/TodosApi",
+        "slug": "todos-api",
+        "longDescription": "TodosApi is a collaborative todo and notes backend. It serves REST endpoints secured with JWT, streams realtime updates over WebSockets, and keeps persistence isolated across Core, Infrastructure, and Api layers.",
+        "highlights": [
+          "JWT token authentication with refresh-free access tokens and fine-grained authorization",
+          "Todos, notes, and friendship workflows with SQLite by default and PostgreSQL-ready migrations",
+          "Built-in WebSocket hub that pushes binary update signals and handles heartbeats"
+        ],
+        "stack": [".NET", "ASP.NET Core", "Entity Framework Core", "WebSockets", "Docker"],
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/TodosApi"
+          }
+        ]
+      },
+      {
+        "title": "NodewarBot API",
+        "description": "Rocket-based API for Black Desert Online node war data with OCR ingestion and SQLite persistence.",
+        "tags": ["Rust", "Rocket", "SQLite"],
+        "link": "https://github.com/Sebastians-codes/NodewarBotApi",
+        "slug": "nodewar-bot-api",
+        "longDescription": "NodewarBot API powers NodewarBot with Rocket 0.5 endpoints, SQLite storage, and an OCR pipeline that parses node war screenshots. It handles weapon metadata, player profiles, and guild node war stats via REST endpoints and multipart uploads.",
+        "highlights": [
+          "Rust (Rocket) API with JSON endpoints for weapons, node war logs, and guild profiles",
+          "OCR ingestion pipeline leveraging Python, OpenCV, and Tesseract for scoreboard screenshots",
+          "Dockerised deployment bundling Rust binary, Python runtime, and OCR dependencies"
+        ],
+        "stack": ["Rust", "Rocket", "SQLite", "Python", "OpenCV", "Tesseract", "Docker"],
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/NodewarBotApi"
+          }
+        ]
+      },
+      {
+        "title": "Nodewar Discord Bot",
+        "description": "Discord slash-command bot that surfaces node war stats by talking to the NodewarBot API.",
+        "tags": [".NET", "Discord", "Node War"],
+        "link": "https://github.com/Sebastians-codes/NodewarDiscordBot",
+        "slug": "nodewar-discord-bot",
+        "longDescription": "Nodewar Discord Bot gives guilds quick access to node war stats and player profiles via slash commands. It coordinates with the NodewarBot API, manages guild admin/officer permissions, and responds with rich embeds for performance snapshots.",
+        "highlights": [
+          "Slash commands for node war leaderboards, player profiles, and screenshot uploads",
+          "Guild-scoped admin/officer workflow with persistent state and audit logging",
+          "Companion API debugger console for probing NodewarBot API endpoints"
+        ],
+        "stack": ["C#", ".NET", "Discord.NET", "NodewarBot API"],
+        "links": [
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/NodewarDiscordBot"
+          }
+        ]
+      },
+      {
+        "title": "vbytes-lan-attendance",
+        "description": "Full-stack LAN attendance tracker with Rust/Rocket API, SvelteKit UI, and PostgreSQL—deployable via Docker Compose.",
+        "tags": ["Rust", "SvelteKit", "Postgres"],
+        "link": "https://github.com/Sebastians-codes/vbytes-lan-attendence",
+        "slug": "vbytes-lan-attendance",
+        "longDescription": "vbytes-lan-attendance keeps LAN check-ins running smoothly. Rocket handles auth, check-in/out, and SSE updates while SvelteKit powers the operator console. Everything launches with Docker Compose so venues can spin it up onsite in minutes.",
+        "highlights": [
+          "Environment-driven Docker Compose stack wiring Postgres, Rocket API, and SvelteKit frontend",
+          "JWT cookie auth with validation rules that ensure attendee records are complete before check-in",
+          "Server-sent events stream keeping the UI in sync with realtime person status changes",
+          "Demo login: admin / AdminPass!234 at https://vbytes.sebastians.codes"
+        ],
+        "stack": ["Rust", "Rocket", "SQLx", "PostgreSQL", "SvelteKit", "Tailwind", "Docker Compose"],
+        "links": [
+          {
+            "label": "Live Demo",
+            "href": "https://vbytes.sebastians.codes"
+          },
+          {
+            "label": "GitHub",
+            "href": "https://github.com/Sebastians-codes/vbytes-lan-attendence"
+          }
+        ]
+      }
+    ]
+  },
+  "experience": {
+    "heading": "Experience",
+    "entries": [
+      {
+        "role": "System Developer (.NET)",
+        "company": "Higher Vocational Studies (2 years)",
+        "period": "Sep 2024 — Present",
+        "summary": "Two-year higher vocational programme focused on .NET development, integrations, and database design."
+      }
+    ]
+  },
+  "contact": {
+    "heading": "Let’s build something",
+    "email": "contact@sebastians.codes",
+    "note": "I’m open to collaborations, consulting, and speaking opportunities.",
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/sebastians-codes"
+      }
+    ]
+  },
+  "preferences": {
+    "defaultTheme": "dark"
+  }
+}
