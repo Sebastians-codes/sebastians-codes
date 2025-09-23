@@ -1,6 +1,6 @@
 # Sebastian's Codes Portfolio
 
-A single-page portfolio for Sebastian, a backend-focused developer who loves tinkering with .NET, Rust, and Svelte projects. The site showcases highlighted projects, experience, and a contact section, while offering an immersive themeable UI with project deep links.
+A single-page portfolio for Me, a backend-focused developer who loves tinkering with .NET, Rust, and Svelte projects. The site showcases highlighted projects, experience, and a contact section, while offering an immersive themeable UI with project deep links.
 
 ## Highlights
 
