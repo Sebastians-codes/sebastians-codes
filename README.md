@@ -1,66 +1,36 @@
-# Sebastian's Codes Portfolio
+# Sebastian — Backend Developer Who Ships
 
-A single-page portfolio for Sebastian, a backend-focused developer who loves tinkering with .NET, Rust, and Svelte projects. The site showcases highlighted projects, experience, and a contact section, while offering an immersive themeable UI with project deep links.
+I build reliable services, expressive tooling, and cohesive product experiences. Give me a problem space and I’ll dig into the domain, model the data, and automate the workflows so teams can move faster.
 
-## Highlights
+## How I Work
 
-- Data-driven layout powered by `src/lib/data/portfolio.json` for quick content updates
-- Bun-powered development workflow with fast installs and script execution
-- Light/dark theme toggle with persistence via `localStorage`
-- Project detail overlays that can be bookmarked through hash-based routing
-- Responsive design with background glow effects and smooth section navigation
+- **Systems thinking:** I map out flows first, then implement APIs, schedulers, and storage that stay predictable under load.
+- **Crafted interfaces:** Whether it’s a Spectre.Console terminal or a Svelte UI, the experience should feel intentional and fast.
+- **Polyglot pragmatism:** .NET is my home base, but I reach for Rust when latency matters and TypeScript when I want frictionless frontends.
+- **Operational focus:** Docker-first delivery, CI/CD pipelines, observability hooks, and documentation so handoffs are easy.
 
-## Tech Stack
+## Projects I’m Proud Of
 
-- Bun for package management and lightning-fast dev scripts
-- Svelte 5 with the `$state` compiler feature
-- Vite 7 for dev server and bundling
-- TypeScript for typed components and stores
-- Tailored component library under `src/lib/components`
+- **[Tasker](https://github.com/Sebastians-codes/Tasker)** — Offline-first task manager in Spectre.Console with automated time tracking, Hangfire jobs, and SQLite↔PostgreSQL sync so consultants can work anywhere.
+- **[RustLikeReturnValues](https://github.com/Sebastians-codes/RustLikeReturnValues)** — Rust-inspired `Option`/`Result` types for C# with async helpers, LINQ integrations, and serialization support to make failure handling explicit.
+- **[TodosApi](https://github.com/Sebastians-codes/TodosApi)** — JWT-secured ASP.NET Core minimal API layering WebSockets, clean architecture, and background processing for collaborative boards.
+- **[NodewarBot API](https://github.com/Sebastians-codes/NodewarBotApi)** — Rocket-based Rust service ingesting OCR’d game screenshots, storing guild stats, and exposing REST endpoints for Node War analytics.
+- **[Nodewar Discord Bot](https://github.com/Sebastians-codes/NodewarDiscordBot)** — .NET bot delivering slash commands, guild-scoped permissions, and rich embeds synced with the NodewarBot backend.
+- **[vbytes-lan-attendance](https://github.com/Sebastians-codes/vbytes-lan-attendence)** — Docker Compose stack pairing Rocket, SvelteKit, and Postgres to run LAN check-ins with realtime SSE updates and sensible admin flows. (Live demo at [vbytes.sebastians.codes](https://vbytes.sebastians.codes))
 
-## Getting Started
+## Capabilities Snapshot
 
-1. Install dependencies (requires [Bun](https://bun.sh/))
-   ```bash
-   bun install
-   ```
-2. Start the Vite dev server
-   ```bash
-   bun run dev
-   ```
-3. Open the URL shown in the terminal (default `http://localhost:5173`).
+- **Backend:** ASP.NET Core, Entity Framework Core, Rocket, SQL/NoSQL, Hangfire, background schedulers
+- **Tooling & Interfaces:** Spectre.Console, Svelte/SvelteKit, Tailwind, React
+- **Ops & Delivery:** Docker, Docker Compose, GitHub Actions, Linux, Bun-powered workflows
+- **Languages:** C#, Rust, TypeScript, SQL, Python (OCR pipelines)
 
-### Build for Production
+## Currently
 
-```bash
-bun run build
-```
+- *System Developer (.NET) student* — Higher Vocational Studies (2-year YH programme), Sep 2024 – Present. I’m applying enterprise integration patterns, domain-driven design, and database architecture to real briefs.
 
-Vite outputs the static build to `dist/`. Preview the production bundle locally with `bun run preview`.
+## Let’s Build Something
 
-## Content Management
+I’m open to backend roles, integrations projects, and collaborations where thoughtful engineering matters. Reach out at `contact@sebastians.codes` or through my socials.
 
-- Hero, About, Skills, Projects, and Contact copy live in `src/lib/data/portfolio.json`.
-- Each project entry supports `slug`, `longDescription`, `highlights`, `stack`, and external `links`. Slugs map to hash routes like `#/projects/tasker`.
-- Update favicons and other public assets under `public/`.
-
-## Project Structure
-
-```
-src/
-├── App.svelte              # Root page orchestrating sections and project overlay
-├── assets/                 # Local images and static files referenced by components
-├── lib/
-│   ├── components/         # UI sections (Hero, Projects, Experience, etc.)
-│   ├── data/portfolio.json # Portfolio content source of truth
-│   └── types.ts            # Shared TypeScript interfaces
-└── main.ts                 # Entry point mounting the app
-```
-
-## Customisation Tips
-
-- Adjust the default theme in `preferences.defaultTheme` within `portfolio.json`.
-- Add socials, new project entries, or experience items directly in the same data file.
-- Tweak global styles in `src/app.css` and component-specific styles within their `.svelte` files.
-
-Happy shipping!
+If you want a deeper dive, the live portfolio showcases each project with highlights, tech stacks, and demos.
